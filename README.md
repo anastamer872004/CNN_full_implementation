@@ -1,13 +1,7 @@
-# CNN_implemntaition_fromScratch
+# CNN --> (Conv → ReLU → Pooling) Visualization of Implementation
 
-Input Image
-(batch_size, 1, 28, 28)
-        │
-        ▼
-Conv2D (1 → 32, kernel=3, padding='same')
-(batch_size, 32, 28, 28)
-        │
-        ▼
+Input Image(batch_size, 1, 28, 28) -> Conv2D (1 → 32, kernel=3, padding='same') -> (batch_size, 32, 28, 28)
+
 MaxPool2D (kernel=2, stride=2)
 (batch_size, 32, 14, 14)
         │

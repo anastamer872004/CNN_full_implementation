@@ -6,7 +6,8 @@
 #### Conv2D(1 → 32, kernel=3, padding='same') output (batch_size, 32, 28, 28) --> MaxPool2D(kernel=2, stride=2) output (batch_size, 32, 14, 14)
 #### Conv2D(32 → 64, kernel=3, padding='same') output (batch_size, 64, 14, 14) --> MaxPool2D (kernel=2, stride=2) output (batch_size, 64, 7, 7)
 
-## 3- Flatten : The feature maps are turned into a single vector containing all extracted features. (64, 7, 7) --> (batch_size,3136)
+## 3- Flatten : The feature maps are turned into a single vector containing all extracted features.
+    (batch_size, 64, 7, 7) --> (batch_size, 3136)
 
 Fully Connected (Linear: 3136 → 128)
 (batch_size, 128)

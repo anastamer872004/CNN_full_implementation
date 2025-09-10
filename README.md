@@ -1,5 +1,7 @@
 # CNN --> (Conv → ReLU → Pooling) Visualization of Implementation
 
+<img width="1048" height="217" alt="image" src="https://github.com/user-attachments/assets/ab5f3270-96ab-438e-bdfa-0eb9573c6016" />
+
 ## 1- Data Phase : Input Image(batch_size, 1, 28, 28) , Each image = 28 × 28 pixels (1 channel)
 
 ## 2- CNN structure :
@@ -16,7 +18,7 @@
 #### (Linear: 3136 → 128) output (batch_size, 128) --> ReLU(batch_size, 128)
 #### (Linear: 128 → 10) output (batch_size, 10) --> Output vector(logits) of 10 class(numbers from 0 - 9)
 
-<img width="1048" height="217" alt="image" src="https://github.com/user-attachments/assets/ab5f3270-96ab-438e-bdfa-0eb9573c6016" />
+
 
 
 

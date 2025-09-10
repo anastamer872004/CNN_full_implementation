@@ -26,26 +26,24 @@
 ####   Batch 2 → 64 images + 64 labels
 ####   ...
 ####   Batch 938 → 64 images + 64 labels
-####   (≈ 938 batches per epoch)
+####   ( 938 batches per epoch)
 
 #### ↓ Each batch goes into the CNN
 ####   inputs: [64, 1, 28, 28]
 ####   → Conv1 + ReLU + Pool
 ####   → Conv2 + ReLU + Pool
 ####   → Flatten to [64, 3136]
-####   → Fully connected layers
+####   → Fully connected layers ( 2 FC )
 ####   → Output: [64, 10]
 
-####   Compare predictions with labels
-####   - criterion = CrossEntropyLoss
-####   - computes loss for 64 images
+####   loss function : that Compare predictions with labels by using CrossEntropyLoss (better predictions → smaller loss)
+####   - CrossEntropyLoss = Applies softmax to outputs , then Computes negative log likelihood.
 
-####   Backpropagation
-####   - loss.backward()
-####   - optimizer.step() updates weights
+####   Backpropagation : computes the gradients of the loss w.r.t. all model weights automatically (using autograd), update weights.
 
 ####   Repeat for all 938 batches = 1 epoch
-####   
+####   - At the end of the epoch, print average loss (total loss ÷ number of batches).
+  
 
 
 

@@ -1,4 +1,4 @@
-# (MNIST -> Conv -> ReLU -> Pool -> FC -> Cross Entropy) 
+# (MNIST -> Conv -> ReLU -> Pool -> Flatten -> Fully Connected Layers -> Cross Entropy) 
 
 <img width="1048" height="217" alt="image" src="https://github.com/user-attachments/assets/ab5f3270-96ab-438e-bdfa-0eb9573c6016" />
 

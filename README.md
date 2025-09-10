@@ -1,8 +1,8 @@
-# CNN --> (Conv → ReLU → Pooling) Visualization of Implementation
+# CNN --> (mnist -> Conv -> ReLU -> Pool -> FC -> Softmax) 
 
 <img width="1048" height="217" alt="image" src="https://github.com/user-attachments/assets/ab5f3270-96ab-438e-bdfa-0eb9573c6016" />
 
-## 1- Data Phase : Input Image(batch_size, 1, 28, 28) , Each image = 28 × 28 pixels (1 channel)
+## 1- MNIST Data : Input Image(batch_size, 1, 28, 28) , Each image = 28 × 28 pixels (1 channel)
 
 ## 2- CNN structure :
 #### (Conv) automatic Detect features(edges, small curves, blobs)

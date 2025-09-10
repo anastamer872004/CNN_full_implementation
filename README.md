@@ -12,6 +12,8 @@
 ## 3- Flatten : The feature maps are turned into a single vector containing all extracted features.
 #### (batch_size, 64, 7, 7) --> (batch_size, 3136)
 
-## 2 Fully Connected Layers structure : 
+## 4- Fully Connected Layers structure ( 2 FC ) : 
 #### (Linear: 3136 → 128) output (batch_size, 128) --> ReLU(batch_size, 128)
 #### (Linear: 128 → 10) output (batch_size, 10) --> Output vector(logits) of 10 class(numbers from 0 - 9)
+
+

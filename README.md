@@ -1,4 +1,4 @@
-# CNN --> (mnist -> Conv -> ReLU -> Pool -> FC -> Softmax) 
+# (MNIST -> Conv -> ReLU -> Pool -> FC -> Softmax) 
 
 <img width="1048" height="217" alt="image" src="https://github.com/user-attachments/assets/ab5f3270-96ab-438e-bdfa-0eb9573c6016" />
 
@@ -17,6 +17,37 @@
 ## 4- Fully Connected Layers structure ( 2 FC ) : 
 #### (Linear: 3136 → 128) output (batch_size, 128) --> ReLU(batch_size, 128)
 #### (Linear: 128 → 10) output (batch_size, 10) --> Output vector(logits) of 10 class(numbers from 0 - 9)
+
+## 5- Training Pipeline (with batch size = 64) :
+#### Dataset: 60,000 MNIST images (28x28)
+
+#### ↓ DataLoader splits into batches
+####   Batch 1 → 64 images + 64 labels
+####   Batch 2 → 64 images + 64 labels
+####   ...
+####   Batch 938 → 64 images + 64 labels
+####   (≈ 938 batches per epoch)
+
+#### ↓ Each batch goes into the CNN
+####   inputs: [64, 1, 28, 28]
+####   → Conv1 + ReLU + Pool
+####   → Conv2 + ReLU + Pool
+####   → Flatten to [64, 3136]
+####   → Fully connected layers
+####   → Output: [64, 10]
+
+####   Compare predictions with labels
+####   - criterion = CrossEntropyLoss
+####   - computes loss for 64 images
+
+####   Backpropagation
+####   - loss.backward()
+####   - optimizer.step() updates weights
+
+####   Repeat for all 938 batches = 1 epoch
+####   
+
+
 
 
 

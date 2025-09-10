@@ -1,6 +1,6 @@
 # CNN --> (Conv → ReLU → Pooling) Visualization of Implementation
 
-## 1- Data Phase : Input Image(batch_size, 1, 28, 28) Each image = 28 × 28 pixels (1 channel)
+## 1- Data Phase : Input Image(batch_size, 1, 28, 28) , Each image = 28 × 28 pixels (1 channel)
 
 ## 2- CNN structure : 
 #### Conv2D(1 → 32, kernel=3, padding='same') output (batch_size, 32, 28, 28) --> MaxPool2D(kernel=2, stride=2) output (batch_size, 32, 14, 14)

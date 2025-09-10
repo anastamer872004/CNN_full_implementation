@@ -6,7 +6,7 @@
 
 ## 2- CNN structure :
 #### (Conv) automatic Detect features(edges, small curves, blobs)
-#### (ReLU) is important for Non-linearity and Sparsity and Avoids vanishing gradients
+#### (ReLU) is important for Non-linearity and Sparsity and Avoids vanishing gradients, = max( 0 , value)
 #### (Pool) Reduce spatial size (less computation, more robust to small shifts).
 #### Conv2D(1 → 32, kernel=3, padding='same') output (batch_size, 32, 28, 28) --> MaxPool2D(kernel=2, stride=2) output (batch_size, 32, 14, 14)
 #### Conv2D(32 → 64, kernel=3, padding='same') output (batch_size, 64, 14, 14) --> MaxPool2D (kernel=2, stride=2) output (batch_size, 64, 7, 7)
